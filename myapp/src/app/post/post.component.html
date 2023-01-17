@@ -1,0 +1,9 @@
+<!-- Sharingdatabetweencomponents   -->
+<div class="child">
+  <h2>child component</h2>
+  <p>Item sold:<strong>{{itemSold}}</strong></p>
+  <label for="new-itemsold-input">Add Item Sold:</label>
+ <input type="text" id="Item-sold-input" #newItemSold>
+<button (click)="addNewItemSold(newItemSold.value)">Add</button>
+
+</div>

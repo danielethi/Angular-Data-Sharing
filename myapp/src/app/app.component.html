@@ -1,0 +1,11 @@
+<!-- sharingdtabetweencomponent @Input @Output Parent -Child -->
+<div class="parent">
+  <h2>Parent Component</h2>
+  <ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+  <app-post
+    [itemSold]="currentSoldItem" (newItemSoldEvent)="addItems($event)"
+    >
+  </app-post>
+</div>
